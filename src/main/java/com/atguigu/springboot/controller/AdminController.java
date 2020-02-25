@@ -18,7 +18,9 @@ public class AdminController {
 	@ResponseBody
 	@RequestMapping("/getAdmin/{id}")
 	public TAdmin getAdmin(@PathVariable("id") Integer id) {
+		System.out.println("实验");
 		return adminService.getAdminById(id);
+		
 	}
 	
 	
